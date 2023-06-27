@@ -1,5 +1,11 @@
-import logo from './logo.svg';
 import './Base.css';
+
+export let img = "";
+export let back = "https://tcg.pokemon.com/assets/img/global/tcg-card-back-2x.jpg";
+
+let back_img = back
+let front_img = "";
+
 
 function App() {
   return (
@@ -11,6 +17,15 @@ function App() {
           width="660"
           height="921"
           />
+          <div class="card__front">
+            <img
+            src={front_img}
+            width="660"
+            height="921"
+            />
+          </div>
+          <div class="card__shine"></div>
+          <div class="card__glare"></div>
         </button>
       </div>
     </div>
